@@ -1,4 +1,5 @@
 import ExpenceDate from './ExpenceDate';
+import Card from './Card';
 import './ExpenceItem.css'
 
 function ExpenseItem(props){
@@ -7,12 +8,12 @@ function ExpenseItem(props){
     // const year = props.date.getFullYear();
     
     return (
-        <div className='expense-item'>
+        <Card  className='expense-item'>
 
             <ExpenceDate date={props.date}/>
             <div className='.expense-item__description'><h2>{props.title}</h2></div>
             <div className='expense-item__price'>${props.amount}</div>
-        </div>
+        </Card>
     )
 }
 export default ExpenseItem;
