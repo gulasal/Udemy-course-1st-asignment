@@ -36,10 +36,12 @@ function App() {
     console.log(expense)
   }
   
+  
   return (
     <div>
-      <h2>Let's get started!</h2>
+      
       <NewExpense onAddExpense = {addExpensehandler}/>
+      
       <Expenses expenses={expenses}/>
     </div>
   );
